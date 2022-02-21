@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formulaire.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Nature Emoi - Contactez-nous</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="images/logo.png" alt="Nature Emoi" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" data-text="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="presentation.html" data-text="Présentation">Présentation</a>
+                </li>
+                <li>
+                    <a href="#" data-text="Contactez-nous">Contactez-nous</a>
+                </li>
+                <li>
+                    <a href="remployé.html" data-text="Recherche Employé">Recherche Employé</a>
+                </li>
+                <li>
+                    <a href="#coordonés" data-text="Nos Coordonnés">Nos Coordonnés</a>
+                </li>
+                <li>
+                    <a href="#formulaire" data-text="Formulaire">Formulaire</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing">
+            <h1 class="big-title">Nature Emoi, élu meilleur magasin de plantes.</h1>
+            <a href="#delivery" class="delivery-link">
+                <span class="scroll-text" data-text="Scroll">Scroll</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="delivery-icon fas fa-store"></i>
+            <p class="box-content">
+                Nos magasins à votre service
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-people-carry"></i>
+            <p class="box-content">
+                Retrait en magasin au bout d'1 heure
+            </p>
+        </div>
+        <div class="delivery">
+            <i class="delivery-icon fas fa-truck"></i>
+            <p class="box-content">
+                Livraison à domicile gratuitement
+            </p>
+        </div>
+    </section>
+    <section id="coordonés" class="coordonés-container">
+        <h1 class="section-title">Nos Coordonnés</h1>
+        <div class="coordonés">
+            <p>Pour nous contactez, veuillez lire tous les trucs ci-dessus :</p>
+            <br>
+            <p>Gmail : NatureEmoi.contact@gmail.com</p>
+            <br>
+            <p>Téléphone : +33 6 87 90 34 67</p>
+            <br>
+            <p>Sinon pour tous problèmes de colis veuillez remplir le formulaire ci-dessous</p>
+            <br>
+            <iframe src="https://giphy.com/embed/xT9DPhySvCRg3nuTqU" width="480" height="190" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+    </section>
+    <section id="formulaire" class="formulaire-container">
+        <h1 class="section-title">Formulaire de contact</h1>
+        <div class="formulaire">
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">Prénom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Ton prénom..">
+          
+              <label for="lname">Nom</label>
+              <input type="text" id="lname" name="lastname" placeholder="Ton nom..">
+          
+              <label for="pays">Pays</label>
+              <select id="pays" name="pays">
+                <option value="france">France</option>
+                <option value="canada">Canada</option>
+                <option value="belgique">Belgique</option>
+              </select>
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Ecrit ton message ici.." style="height:200px"></textarea>
+          
+              <input class="button" type="submit" value="Submit">
+          
+            </form>
+          </div> 
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2022 - Nature Emoi</span>
+        <a href="#" class="conditions">Conditions générales de vente</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Nature Emoi - Présentation</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="images/logo.png" alt="Nature Emoi" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" data-text="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="presentation.html" data-text="Présentation">Présentation</a>
+                </li>
+                <li>
+                    <a href="contact.html" data-text="Contactez-nous">Contactez-nous</a>
+                </li>
+                <li>
+                    <a href="#" data-text="Recherche Employé">Recherche Employé</a>
+                </li>
+                <li>
+                    <a href="#poste" data-text="Emplois">Emplois</a>
+                </li>
+                <li>
+                    <a href="#video" data-text="Vidéo">Vidéo</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing">
+            <h1 class="big-title">Nature Emoi, élu meilleur magasin de plantes.</h1>
+            <a href="#delivery" class="delivery-link">
+                <span class="scroll-text" data-text="Scroll">Scroll</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="delivery-icon fas fa-store"></i>
+            <p class="box-content">
+                Nos magasins à votre service
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-people-carry"></i>
+            <p class="box-content">
+                Retrait en magasin au bout d'1 heure
+            </p>
+        </div>
+        <div class="delivery">
+            <i class="delivery-icon fas fa-truck"></i>
+            <p class="box-content">
+                Livraison à domicile gratuitement
+            </p>
+        </div>
+    </section>
+    <section id="poste" class="poste-container">
+        <h1 class="section-title">Les Postes</h1>
+        <div class="poste">
+            <table>
+                <tr>
+                    <th class="poste-postes">Postes</th>
+                    <th class="poste-salaire">Salaire</th>
+                </tr>
+                <tr>
+                    <td>Vendeur / Vendeuse</td>
+                    <td>1400€</td>
+                </tr>
+                <tr>
+                    <td>Caissier / Caissière</td>
+                    <td>1200€</td>
+                </tr>
+                <tr>
+                    <td>Livreur / Livreuse</td>
+                    <td>1250€</td>
+                </tr>
+                <tr>
+                    <td>Agent de Sécurité</td>
+                    <td>1280€</td>
+                </tr>
+                <tr>
+                    <td>Directeur/trice en communication</td>
+                    <td>1600€</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="video" class="video-container">
+        <h1 class="section-title">Vidéo de présentation</h1>
+        <div class="video">
+            <video controls>
+                <source src="images/présentation.mp4" type="video/mp4">
+                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                   Voici <a href="images/présentation.mp4">un lien pour télécharger la vidéo</a>.</p>
+              </video>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2022 - Nature Emoi</span>
+        <a href="#" class="conditions">Conditions générales de vente</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

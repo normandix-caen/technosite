@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Nature Emoi - Présentation</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="images/logo.png" alt="Nature Emoi" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" data-text="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="#" data-text="Présentation">Présentation</a>
+                </li>
+                <li>
+                    <a href="contact.html" data-text="Contactez-nous">Contactez-nous</a>
+                </li>
+                <li>
+                    <a href="remployé.html" data-text="Recherche Employé">Recherche Employé</a>
+                </li>
+                <li>
+                    <a href="#history" data-text="Notre Histoire">Notre Histoire</a>
+                </li>
+                <li>
+                    <a href="#video" data-text="Vidéo">Vidéo</a>
+                </li>
+                <li>
+                    <a href="#map" data-text="Localisation">Localisation</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing">
+            <h1 class="big-title">Nature Emoi, élu meilleur magasin de plantes.</h1>
+            <a href="#delivery" class="delivery-link">
+                <span class="scroll-text" data-text="Scroll">Scroll</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="delivery-icon fas fa-store"></i>
+            <p class="box-content">
+                Nos magasins à votre service
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-people-carry"></i>
+            <p class="box-content">
+                Retrait en magasin au bout d'1 heure
+            </p>
+        </div>
+        <div class="delivery">
+            <i class="delivery-icon fas fa-truck"></i>
+            <p class="box-content">
+                Livraison à domicile gratuitement
+            </p>
+        </div>
+    </section>
+    <section id="history" class="history-container">
+        <h1 class="section-title">Notre Histoire</h1>
+        <div class="history">
+            <p>Née en 2002, NatureEmoi est une entrprise spécialisé dans la vente de plante en ligne, sous la filiale Gamm Vert. Elu première entreprise de vente en ligne de plante en France et en Europe.</p>
+            <br>
+            <p>C'est en créant la franchise NatureEmoi que le fondateur John Hector et les coopératives franchisées ont choisi de déployer le savoir-faire de la nature auprès de jardinier expert sur l'ensemble du territoire français.</p>
+            <br>
+            <p>NatureEmoi est aujourd'hui le 1er réseau français de fleuriste en ligne avec plus de 1000 magasins-relais réunissant NatureEmoi, NatureEmoi Village et NatureEmoi Nature, implantés partout en France, en Belgique, en Espagne et en Angeleterre, trouvez le votre ici. Vous souhaitez devenir franchisé ? Contactez-nous par email pour en savoir plus !</p>
+        </div>
+    </section>
+    <section id="video" class="video-container">
+        <h1 class="section-title">Vidéo de présentation</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YioJcvASOJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="map" class="map-container">
+        <h1 class="section-title">Notre localisation</h1>
+        <div class="map">
+            <p>Nous avons des point-relais partout, en voici un dans le Calvados, <a href="https://www.google.com/maps/d/u/0/embed?mid=15mAHEx0Juaaaln5hd_QnzqD7p93KqtcC&ehbc=2E312F">à Carpiquet </a>.</p> 
+            <br>
+            <p>Malgré c'est point-relais nos équipe peuvent directement vous livré chez vous.</p>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2022 - Nature Emoi</span>
+        <a href="#" class="conditions">Conditions générales de vente</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
